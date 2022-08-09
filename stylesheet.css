@@ -22,14 +22,20 @@
   font-family: ISOCPEUR;
 }
 
-html {
-  background-color: #e0be83;
-}
 
 body {
   margin: 0 20vw;
   background-color: #163e3e;
   color: #e0be8e;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  padding: 2em 0;
 }
 
 h1 {
@@ -47,6 +53,34 @@ h1 span:nth-child(odd) {
 }
 
 h2 {
-  font-size: 3em;
+  font-size: 2em;
   text-align: center;
+}
+
+nav {
+  background-color: #e0be83;
+  color: #163e3e;
+  font-size: 1.6em;
+  line-height: 1.2;
+}
+
+nav ul {
+  padding: 0.75em 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+}
+
+nav li {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+nav li:first-of-type {
+  font-size: 1.5em;
+}
+
+nav li:last-of-type {
+  font-size: 0.8em;
 }
