@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'ISOCPEUR';
+    src: url('ISOCPEUR.woff2') format('woff2'),
+        url('ISOCPEUR.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ISOCPEUR';
+    src: url('ISOCPEURItalic.woff2') format('woff2'),
+        url('ISOCPEURItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: ISOCPEUR;
+}
+
+html {
+  background-color: #e0be83;
+}
+
+body {
+  margin: 0 20vw;
+  background-color: #163e3e;
+  color: #e0be8e;
+}
+
+h1 {
+  font-size: 5em;
+  text-align: center;
+}
+
+h1 span {
+  font-size: 40%;
+  vertical-align: sub;
+}
+
+h1 span:nth-child(odd) {
+  vertical-align: super;
+}
+
+h2 {
+  font-size: 3em;
+  text-align: center;
+}
