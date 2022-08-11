@@ -186,13 +186,13 @@ main > ul > li {
   background-color: #e0be83;
   display: flex;
   overflow: hidden;
-  padding: 0;
-  height: 80px;
+  padding: 0.2em;
+  height: 5em;
+  justify-content: space-between;
 }
 
 .marquee img {
-  padding: 2px;
-  width: 100%;
+  flex: 0 0 auto;
 }
 
 
