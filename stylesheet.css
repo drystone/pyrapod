@@ -108,13 +108,15 @@ main > * {
 }
 
 main > ul {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
   font-size: 2em;
 }
 
 main > p {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
   font-size: 2em;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
 }
 
 footer {
@@ -138,4 +140,63 @@ main > ul > li {
   background-image: url(cream-pod.png);
   background-size: 1.5em;
   background-repeat: no-repeat;
+  background-position: left top;
+}
+
+#pyrapod-list {
+  margin: 2em 0;
+  height: 17em;
+  padding-bottom: 12em;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  background-image: url(pyrapod.png);
+  background-position: 30% bottom;
+  background-repeat: no-repeat;
+  background-size: 20em;
+}
+
+#pyrapod-list > li {
+  width: 50%;
+}
+
+#pyrapod-list > li:last-of-type {
+  padding-left: 0em;
+  padding-right: 2em;
+  background-image: url(cream-pod.png);
+  background-position: right top;
+  text-align: right;
+}
+
+#spec-list {
+  margin-right: 5%;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-image: url(interior.jpeg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#spec-list li {
+  padding-bottom: 0.5em;
+}
+
+.marquee {
+  background-color: #e0be83;
+  display: flex;
+  overflow: hidden;
+  padding: 0;
+  height: 80px;
+}
+
+.marquee img {
+  padding: 2px;
+  width: 100%;
+}
+
+
+.slides {
+  height: 12em;
+  background: blue;
 }
