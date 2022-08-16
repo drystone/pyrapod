@@ -159,23 +159,40 @@ main > ul > li {
 }
 
 #pyrapod-list > li {
+  padding-left: 0em;
+  background-image: none;
   width: 50%;
 }
 
+#pyrapod-list >li:before {
+  background-image: url(cream-pod.png);
+  background-size: contain;
+  display: inline-block;
+  vertical-align: middle;
+  width: 1.5em;
+  height: 1em;
+  content: "";
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
 #pyrapod-list > li:last-of-type {
-  padding-left: 0em;
   text-align: right;
-  background-image: none;
+}
+
+#pyrapod-list >li:last-of-type:before {
+  display: none;
 }
 
 #pyrapod-list >li:last-of-type:after {
   background-image: url(cream-pod.png);
   background-size: contain;
   display: inline-block;
-  width: 1em;
+  vertical-align: middle;
+  width: 1.5em;
   height: 1em;
   content: "";
-  background-position: right;
+  background-position: right 100%;
   background-repeat: no-repeat;
 }
 
