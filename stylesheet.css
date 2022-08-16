@@ -24,7 +24,7 @@
 
 
 body {
-  margin: 0 20vw;
+  margin: 0 15vw;
   background-color: #163e3e;
   color: #e0be8e;
 }
@@ -73,7 +73,7 @@ ul {
 nav {
   background-color: #e0be83;
   color: #163e3e;
-  font-size: 1.6em;
+  font-size: 2em;
   line-height: 1.2;
 }
 
@@ -141,19 +141,21 @@ main > ul > li {
   background-size: 1.5em;
   background-repeat: no-repeat;
   background-position: left top;
+  border-radius: 0.5em;
 }
 
 #pyrapod-list {
   margin: 2em 0;
-  height: 17em;
+  height: 18em;
   padding-bottom: 12em;
   width: 100%;
   display: flex;
   flex-flow: column wrap;
   background-image: url(pyrapod.png);
-  background-position: 30% bottom;
+  background-position: 0% bottom;
   background-repeat: no-repeat;
   background-size: 20em;
+  font-size: 3em;
 }
 
 #pyrapod-list > li {
@@ -162,10 +164,19 @@ main > ul > li {
 
 #pyrapod-list > li:last-of-type {
   padding-left: 0em;
-  padding-right: 2em;
-  background-image: url(cream-pod.png);
-  background-position: right top;
   text-align: right;
+  background-image: none;
+}
+
+#pyrapod-list >li:last-of-type:after {
+  background-image: url(cream-pod.png);
+  background-size: contain;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  content: "";
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 #spec-list {
@@ -173,7 +184,7 @@ main > ul > li {
   padding-top: 2em;
   padding-bottom: 2em;
   background-image: url(interior.jpeg);
-  background-position: right;
+  background-position: bottom right;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -199,4 +210,16 @@ main > ul > li {
 .slides {
   height: 12em;
   background: blue;
+}
+
+@media (max-width: 1023px) {
+  body {
+    margin: 0 0;
+  }
+  nav > ul > li:first-of-type {
+      display: none;
+  }
+  nav > ul > li:last-of-type {
+      display: none;
+  }
 }
