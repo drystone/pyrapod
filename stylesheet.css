@@ -146,13 +146,13 @@ main > ul > li {
 
 #pyrapod-list {
   margin: 2em 0;
-  height: 18em;
-  padding-bottom: 12em;
+  height: 15em;
+  padding-bottom: 9em;
   width: 100%;
   display: flex;
   flex-flow: column wrap;
   background-image: url(pyrapod.png);
-  background-position: 0% bottom;
+  background-position: center bottom;
   background-repeat: no-repeat;
   background-size: 20em;
   font-size: 3em;
