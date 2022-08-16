@@ -161,7 +161,10 @@ main > ul > li {
 #pyrapod-list > li {
   padding-left: 0em;
   background-image: none;
-  width: 50%;
+  width: fit-content;
+  background-color: rgba(22,62,62,0.7);
+  border-radius: 0.5em;
+  background-size: auto;
 }
 
 #pyrapod-list >li:before {
@@ -178,6 +181,7 @@ main > ul > li {
 
 #pyrapod-list > li:last-of-type {
   text-align: right;
+  margin-left: auto;
 }
 
 #pyrapod-list >li:last-of-type:before {
