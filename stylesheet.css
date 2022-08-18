@@ -107,12 +107,6 @@ main > * {
   padding: 0 5%;
 }
 
-main > ul {
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-  font-size: 2em;
-}
-
 main > p {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
@@ -135,13 +129,32 @@ footer > a:last-of-type {
   padding-right: 0;
 }
 
-main > ul > li {
+main > .list-with-sidebar {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  font-size: 2em;
+  display: flex;
+}
+
+main > .list-with-sidebar > *:first-child {
+  margin-right: 1em;
+}
+
+main > .list-with-sidebar > ul {
+  flex: 1 1;
+}
+
+main > .list-with-sidebar > ul > li {
   padding-left: 2em;
   background-image: url(cream-pod.png);
   background-size: 1.5em;
   background-repeat: no-repeat;
   background-position: left top;
   border-radius: 0.5em;
+}
+
+.list-with-sidebar > .sidebar {
+  flex: 0 0 40%;
 }
 
 #pyrapod-list {
@@ -200,20 +213,6 @@ main > ul > li {
   background-repeat: no-repeat;
 }
 
-#spec-list {
-  margin-right: 5%;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  background-image: url(interior.jpeg);
-  background-position: bottom right;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-#spec-list li {
-  padding-bottom: 0.5em;
-}
-
 .marquee {
   background-color: #e0be83;
   display: flex;
@@ -226,7 +225,6 @@ main > ul > li {
 .marquee img {
   flex: 0 0 auto;
 }
-
 
 .slides {
   height: 12em;
@@ -243,4 +241,41 @@ main > ul > li {
   nav > ul > li:last-of-type {
       display: none;
   }
+}
+
+.animate > div {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding-bottom: 75%;
+}
+
+.animate > div > img {
+  width: 100%;
+  position: absolute;
+  animation: animate 32s infinite;
+  opacity: 0;
+}
+
+.animate > div > img:nth-child(1) { animation-delay: 0s; }
+.animate > div > img:nth-child(2) { animation-delay: 2s; }
+.animate > div > img:nth-child(3) { animation-delay: 4s; }
+.animate > div > img:nth-child(4) { animation-delay: 6s; }
+.animate > div > img:nth-child(5) { animation-delay: 8s; }
+.animate > div > img:nth-child(6) { animation-delay: 10s; }
+.animate > div > img:nth-child(7) { animation-delay: 12s; }
+.animate > div > img:nth-child(8) { animation-delay: 14s; }
+.animate > div > img:nth-child(9) { animation-delay: 16s; }
+.animate > div > img:nth-child(10) { animation-delay: 18s; }
+.animate > div > img:nth-child(11) { animation-delay: 20s; }
+.animate > div > img:nth-child(12) { animation-delay: 22s; }
+.animate > div > img:nth-child(13) { animation-delay: 24s; }
+.animate > div > img:nth-child(14) { animation-delay: 26s; }
+.animate > div > img:nth-child(15) { animation-delay: 28s; }
+.animate > div > img:nth-child(16) { animation-delay: 30s; }
+
+@keyframes animate {
+  10% { opacity: 1; }
+  20% { opacity: 1; }
+  30% { opacity: 0; }
 }
