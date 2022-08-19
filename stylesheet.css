@@ -145,16 +145,23 @@ main > .list-with-sidebar > ul {
 }
 
 main > .list-with-sidebar > ul > li {
-  padding-left: 2em;
-  background-image: url(cream-pod.png);
-  background-size: 1.5em;
-  background-repeat: no-repeat;
-  background-position: left top;
-  border-radius: 0.5em;
+  margin-bottom: 1em;
 }
 
 .list-with-sidebar > .sidebar {
   flex: 0 0 40%;
+}
+
+main > .list-with-sidebar > ul > li:before {
+  background-image: url(cream-pod.png);
+  background-size: contain;
+  display: inline-block;
+  vertical-align: middle;
+  width: 1.8em;
+  height: 1em;
+  content: "";
+  background-position: left;
+  background-repeat: no-repeat;
 }
 
 #pyrapod-list {
@@ -226,11 +233,6 @@ main > .list-with-sidebar > ul > li {
   flex: 0 0 auto;
 }
 
-.slides {
-  height: 12em;
-  background: blue;
-}
-
 @media (max-width: 1023px) {
   body {
     margin: 0 0;
@@ -278,4 +280,87 @@ main > .list-with-sidebar > ul > li {
   10% { opacity: 1; }
   20% { opacity: 1; }
   30% { opacity: 0; }
+}
+
+.slides {
+    width: 100%;
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slides img {
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: -600px;
+    width: 600px;
+    height: 200px;
+}
+
+.slides img:nth-child(1) { animation: slide1 120s infinite; animation-timing-function: linear; }
+.slides img:nth-child(2) { animation: slide2 120s infinite; animation-timing-function: linear; }
+.slides img:nth-child(3) { animation: slide3 120s infinite; animation-timing-function: linear; }
+.slides img:nth-child(4) { animation: slide4 120s infinite; animation-timing-function: linear; }
+.slides img:nth-child(5) { animation: slide5 120s infinite; animation-timing-function: linear; }
+.slides img:nth-child(6) { animation: slide6 120s infinite; animation-timing-function: linear; }
+
+@keyframes slide1 {
+  from { left: -1200px; opacity: 0; }
+  17%  { left: 1800px; opacity: 0; }
+  33%  { left: 1200px; opacity: 1; }
+  50%  { left: 600px; }
+  67%  { left: 0px; }
+  83%  { left: -600px; opacity: 1; }
+  to   { left: -1200px; opacity: 0; }
+}
+
+@keyframes slide2 {
+  from { left: 1800px; opacity: 0; }
+  17%  { left: 1200px; opacity: 1; }
+  33%  { left: 600px; }
+  50%  { left: 0px; }
+  67%  { left: -600px; opacity: 1; }
+  83%  { left: -1200px; opacity: 0; }
+  to   { left: 1800px; opacity: 0; }
+}
+
+@keyframes slide3 {
+  from { left: 1200px; opacity: 1; }
+  17%  { left: 600px; }
+  33%  { left: 0px; }
+  50%  { left: -600px; opacity: 1; }
+  67%  { left: -1200px; opacity: 0; }
+  83%  { left: 1800px; opacity: 0; }
+  to   { left: 1200px; opacity: 1; }
+}
+
+@keyframes slide4 {
+  from { left: 600px; }
+  17%  { left: 0px; }
+  33%  { left: -600px; opacity: 1; }
+  50%  { left: -1200px; opacity: 0; }
+  67%  { left: 1800px; opacity: 0; }
+  83%  { left: 1200px; opacity: 1; }
+  to   { left: 600px; }
+}
+
+@keyframes slide5 {
+  from { left: 0px; }
+  17%  { left: -600px; opacity: 1; }
+  33%  { left: -1200px; opacity: 0; }
+  50%  { left: 1800px; opacity: 0; }
+  67%  { left: 1200px; opacity: 1; }
+  83%  { left: 600px; }
+  to   { left: 0px; }
+}
+
+@keyframes slide6 {
+  from { left: -600px; opacity: 1; }
+  17%  { left: -1200px; opacity: 0; }
+  33%  { left: 1800px; opacity: 0; }
+  50%  { left: 1200px; opacity: 1; }
+  67%  { left: 600px; }
+  83%  { left: 0px; }
+  to   { left: -600px; opacity: 1; }
 }
