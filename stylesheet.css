@@ -238,10 +238,10 @@ main > .list-with-sidebar > ul > li:before {
     margin: 0 0;
   }
   nav > ul > li:first-of-type {
-      display: none;
+    display: none;
   }
   nav > ul > li:last-of-type {
-      display: none;
+    display: none;
   }
 }
 
@@ -363,4 +363,20 @@ main > .list-with-sidebar > ul > li:before {
   67%  { left: 600px; }
   83%  { left: 0px; }
   to   { left: -600px; opacity: 1; }
+}
+
+.configure ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 2em;
+}
+
+.configure li {
+  flex: 0 0 45%;
+}
+
+.configure img {
+  padding: 1em;
 }
