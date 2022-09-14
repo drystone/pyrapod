@@ -136,15 +136,15 @@ main > .list-with-sidebar {
   display: flex;
 }
 
-main > .list-with-sidebar > *:first-child {
+main > .list-with-sidebar *:first-child {
   margin-right: 1em;
 }
 
-main > .list-with-sidebar > ul {
+main > .list-with-sidebar ul {
   flex: 1 1;
 }
 
-main > .list-with-sidebar > ul > li {
+main > .list-with-sidebar ul li {
   margin-bottom: 1em;
 }
 
@@ -152,7 +152,11 @@ main > .list-with-sidebar > ul > li {
   flex: 0 0 40%;
 }
 
-main > .list-with-sidebar > ul > li:before {
+.list-with-sidebar ul ul {
+  margin-left: 2em;
+}
+
+main > .list-with-sidebar ul li:before {
   background-image: url(cream-pod.png);
   background-size: contain;
   display: inline-block;
@@ -182,7 +186,6 @@ main > .list-with-sidebar > ul > li:before {
   padding-left: 0em;
   background-image: none;
   width: fit-content;
-  background-color: rgba(22,62,62,0.7);
   border-radius: 0.5em;
   background-size: auto;
 }
@@ -286,7 +289,7 @@ main > .list-with-sidebar > ul > li:before {
     padding: 0 10px;
 }
 
-.configure ul {
+.configure {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
