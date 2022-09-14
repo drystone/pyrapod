@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'ISOCPEUR';
-    src: url('ISOCPEUR.woff2') format('woff2'),
-        url('ISOCPEUR.woff') format('woff');
+    src: url('fonts/ISOCPEUR.woff2') format('woff2'),
+        url('fonts/ISOCPEUR.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'ISOCPEUR';
-    src: url('ISOCPEURItalic.woff2') format('woff2'),
-        url('ISOCPEURItalic.woff') format('woff');
+    src: url('fonts/ISOCPEURItalic.woff2') format('woff2'),
+        url('fonts/ISOCPEURItalic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -53,7 +53,7 @@ h1 > span:nth-child(odd) {
 }
 
 h2 {
-  font-size: 3.5em;
+  font-size: 2.5em;
   text-align: center;
   text-transform: lowercase;
 }
@@ -282,87 +282,8 @@ main > .list-with-sidebar > ul > li:before {
   30% { opacity: 0; }
 }
 
-.slides {
-    width: 100%;
-    height: 200px;
-    position: relative;
-    overflow: hidden;
-}
-
-.slides img {
+#slick img {
     padding: 0 10px;
-    position: absolute;
-    top: 0;
-    left: -600px;
-    width: 600px;
-    height: 200px;
-}
-
-.slides img:nth-child(1) { animation: slide1 120s infinite; animation-timing-function: linear; }
-.slides img:nth-child(2) { animation: slide2 120s infinite; animation-timing-function: linear; }
-.slides img:nth-child(3) { animation: slide3 120s infinite; animation-timing-function: linear; }
-.slides img:nth-child(4) { animation: slide4 120s infinite; animation-timing-function: linear; }
-.slides img:nth-child(5) { animation: slide5 120s infinite; animation-timing-function: linear; }
-.slides img:nth-child(6) { animation: slide6 120s infinite; animation-timing-function: linear; }
-
-@keyframes slide1 {
-  from { left: -1200px; opacity: 0; }
-  17%  { left: 1800px; opacity: 0; }
-  33%  { left: 1200px; opacity: 1; }
-  50%  { left: 600px; }
-  67%  { left: 0px; }
-  83%  { left: -600px; opacity: 1; }
-  to   { left: -1200px; opacity: 0; }
-}
-
-@keyframes slide2 {
-  from { left: 1800px; opacity: 0; }
-  17%  { left: 1200px; opacity: 1; }
-  33%  { left: 600px; }
-  50%  { left: 0px; }
-  67%  { left: -600px; opacity: 1; }
-  83%  { left: -1200px; opacity: 0; }
-  to   { left: 1800px; opacity: 0; }
-}
-
-@keyframes slide3 {
-  from { left: 1200px; opacity: 1; }
-  17%  { left: 600px; }
-  33%  { left: 0px; }
-  50%  { left: -600px; opacity: 1; }
-  67%  { left: -1200px; opacity: 0; }
-  83%  { left: 1800px; opacity: 0; }
-  to   { left: 1200px; opacity: 1; }
-}
-
-@keyframes slide4 {
-  from { left: 600px; }
-  17%  { left: 0px; }
-  33%  { left: -600px; opacity: 1; }
-  50%  { left: -1200px; opacity: 0; }
-  67%  { left: 1800px; opacity: 0; }
-  83%  { left: 1200px; opacity: 1; }
-  to   { left: 600px; }
-}
-
-@keyframes slide5 {
-  from { left: 0px; }
-  17%  { left: -600px; opacity: 1; }
-  33%  { left: -1200px; opacity: 0; }
-  50%  { left: 1800px; opacity: 0; }
-  67%  { left: 1200px; opacity: 1; }
-  83%  { left: 600px; }
-  to   { left: 0px; }
-}
-
-@keyframes slide6 {
-  from { left: -600px; opacity: 1; }
-  17%  { left: -1200px; opacity: 0; }
-  33%  { left: 1800px; opacity: 0; }
-  50%  { left: 1200px; opacity: 1; }
-  67%  { left: 600px; }
-  83%  { left: 0px; }
-  to   { left: -600px; opacity: 1; }
 }
 
 .configure ul {

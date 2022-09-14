@@ -2,8 +2,11 @@
 <html lang=en>
   <head>
     <meta charset=utf-8>
-    <link rel=stylesheet href=reset.css>
-    <link rel=stylesheet href=stylesheet.css>
+    <link rel=stylesheet type=text/css href=reset.css>
+    <link rel=stylesheet type=text/css href=stylesheet.css>
+    <link rel=stylesheet type=text/css href=slick.css>
+    <link rel=stylesheet type=text/css href=slick-theme.css>
+    <link rel=stylesheet type=text/css href=slick-lightbox.css>
     <title>Pyrapod: pyramid-inspired eco-cabins</title>
   </head>
   <body>
@@ -12,8 +15,6 @@
         <li>Pyrapod
         <li><a href=index.html>Home</a>
         <li><a href=go-configure.html>Configure</a>
-        <li><a href=optional-extras.html>Extras</a>
-        <li><a href=gallery.html>Gallery</a>
         <li><a href=tel:+447929871552>07929 871552</a><br><a href=mailto:paul@pyrapod.uk>paul@pyrapod.uk</a>
       </ul>
     </nav>
@@ -42,14 +43,6 @@
       <p>The Pyrapod is a wooden cabin based on the intriguing geometry of the Great Pyramid of ancient Egypt.
       <p>An inspiring, warm and comfortable living space which can accommodate a double bed, table and chairs and a woodburner.
       <p>Ideal for glamping, studio space, yoga room, or for guests.
-      <div class=slides>
-        <img alt="" src="interior-slide-1.jpeg">
-        <img alt="" src="interior-slide-2.jpeg">
-        <img alt="" src="interior-slide-3.jpeg">
-        <img alt="" src="interior-slide-4.jpeg">
-        <img alt="" src="interior-slide-5.jpeg">
-        <img alt="" src="interior-slide-6.jpeg">
-      </div>
       <div class=list-with-sidebar>
         <ul>
           <li>Fully insulated
@@ -96,19 +89,38 @@
           <li>Optional extras include underfloor heating, kitchenette, and porch.
         </ul>
       </div>
-      <div class=slides>
-        <img alt="" src="exterior-slide-1.jpeg">
-        <img alt="" src="exterior-slide-2.jpeg">
-        <img alt="" src="exterior-slide-3.jpeg">
-        <img alt="" src="exterior-slide-4.jpeg">
-        <img alt="" src="exterior-slide-5.jpeg">
-        <img alt="" src="exterior-slide-6.jpeg">
+      <div id=slick data-slick='{"slidesToShow": 4, "slidesToScroll": 1, "autoplay": true, "dots": true}'>
+        <div><img alt="" src="gallery01.jpeg"></div>
+        <div><img alt="" src="gallery02.jpeg"></div>
+        <div><img alt="" src="gallery03.jpeg"></div>
+        <div><img alt="" src="gallery04.jpeg"></div>
+        <div><img alt="" src="gallery05.jpeg"></div>
+        <div><img alt="" src="gallery06.jpeg"></div>
+        <div><img alt="" src="gallery07.jpeg"></div>
+        <div><img alt="" src="gallery08.jpeg"></div>
+        <div><img alt="" src="gallery09.jpeg"></div>
+        <div><img alt="" src="gallery10.jpeg"></div>
+        <div><img alt="" src="gallery11.jpeg"></div>
+        <div><img alt="" src="gallery12.jpeg"></div>
+        <div><img alt="" src="gallery13.jpeg"></div>
+        <div><img alt="" src="gallery14.jpeg"></div>
       </div>
+
       <p>For a no-obligation detailed quote please get in touch. Prices start at £16,500+vat.
     </main>
     <footer>
       <a href=tel:+447929871552>07929 871552</a> <a href=mailto:paul@pyrapod.uk>paul@pyrapod.uk</a>
       <div>Copyright &copy; The Pyrapod Project 2022</div>
     </footer>
+    <script type=text/javascript src=jquery.min.js></script>
+    <script type=text/javascript src=slick.min.js></script>
+    <script type=text/javascript src=slick-lightbox.min.js></script>
+  <script type=text/javascript>
+    $("#slick").slick();
+    $("#slick").slickLightbox({
+      itemSelector: 'img',
+      src: 'src'
+    });
+  </script>
   </body>
 </html>
